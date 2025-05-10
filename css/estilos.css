@@ -1,0 +1,204 @@
+@font-face {
+  font-family: 'Array-Regular';
+  src: url('../fonts/Array-Regular.woff') format('woff2'),
+       url('../fonts/Array-Regular.woff2') format('woff');
+  font-weight: 600;
+  font-display: swap;
+}
+
+h1 {
+  font-family: 'Array-Regular', sans-serif;
+  font-size: 45px;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    display: italic;
+}
+
+.login-popup {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 1055;
+  }
+  
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    width: 300px;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+}
+  
+.carrito-menu {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    color: white;
+    display: none;
+    z-index: 1050;
+}
+  
+  .carrito-menu .producto-carrito {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .producto-carrito img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+.producto-carrito button {
+    margin-left: auto;
+}
+
+.dropdown-item:hover {
+    background-color: #b00000; /* Color al pasar el mouse */
+    border-radius: 8px;
+}
+
+.hover-pill:hover {
+    background-color: #dc3545; /* rojo Bootstrap */
+    color: white !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#tarj1 {
+    background-color: rgb(30, 30, 30);
+}
+
+#tarj2 {
+    background-color: rgb(50, 50, 50);
+}
+
+.custom-underline {
+    border-bottom: 4px solid #dc3545;
+    border-radius: 3px;
+    padding-bottom: 8px;
+}
+
+.tab-button {
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+.tab-button.active {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.badge-pill {
+    display: inline-block;
+    font-size: 0.95rem;
+    padding: 0.6em 1.2em;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.badge-pill:hover {
+    animation: glowPulse 1.2s infinite alternate;
+    transform: scale(1.05);
+}
+
+#blog {
+  font-family: 'Array-Regular', sans-serif;
+  font-size: 30px;
+}
+
+@keyframes glowPulse {
+    from {
+      box-shadow: 0 0 5px rgb(255, 81, 0), 0 0 10px rgb(255, 119, 0);
+    }
+    to {
+      box-shadow: 0 0 15px rgb(255, 81, 0), 0 0 30px rgb(255, 119, 0);
+    }
+}
+  
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(253, 13, 13, 0.5);
+    }
+    70% {
+      transform: scale(1.2);
+      box-shadow: 0 0 0 10px rgba(13, 110, 253, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(13, 109, 253, 0);
+    }
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1); }
+    30%  { transform: scale(1.4); }
+    50%  { transform: scale(0.9); }
+    70%  { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 6px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0.6;
+}
+  
+.carousel-indicators .active {
+    background-color: red;
+    opacity: 1;
+    animation: pulse 1.5s infinite;
+}
+  
+.carousel-indicators {
+    bottom: -40px; /* Ajusta según lo que necesites */
+}
+  
+
+.rounded-pill:hover {
+    animation: glowPulse 1.2s infinite alternate;
+    transform: scale(1.05);
+}
+
+@keyframes glowPulse {
+    from {
+      box-shadow: 0 0 5px rgb(255, 30, 0), 0 0 10px rgb(255, 119, 0);
+    }
+    to {
+      box-shadow: 0 0 2px rgb(255, 0, 0), 0 0 30px rgb(255, 119, 0);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  #titulo {
+    font-size: 60px;
+    font-weight: 600;
+  }
+  
+}

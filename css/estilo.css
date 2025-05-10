@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Array-Regular';
+  src: url('../fonts/Array-Regular.woff') format('woff2'),
+       url('../fonts/Array-Regular.woff2') format('woff');
+  font-weight: 600;
+  font-display: swap;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: #833AB4;
+    background: radial-gradient(circle, rgba(131, 58, 180, 1) 10%, rgba(253, 29, 29, 1) 30%, rgba(0, 0, 0, 1) 80%);
+    background-size: 200% 200%;
+}
+  
+
+h3 {
+    font-family: "Array-Regular", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    color: white;
+  }
+  
+  .modal-content {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+  }
+  
+  .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .list-group-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+  
+  .list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  
